@@ -6,49 +6,71 @@ import Navbar from "../components/Navbar.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 import SkillCard from "../components/SkillCard.astro";
 import Title from "../components/Title.astro";
+import Texto from "../components/Texto.astro";
 ---
 
-<Layout title="Minimalist Dragon | Portfolio">
+<Layout title="Mi Portfolio">
 	<header><Navbar /></header>
 		<main>
 			<section class="about">
 				<img src='dragon.png' alt='profile picture'/>
 				<article>
-					<p>Hi!, I'm Alejandro Londono</p>
-					<Title text='Software Developer'/>
+					<!--Texto text="Enserio." />
+					<Texto text="¿Quieres una web?" />
+					<Texto text="Si es así ¿Qué buscas realmente?" />
+					<Texto text="¿La aprobación ajena o vender más y mejor?" />
+					<Texto text="¿Ocultar tu mediocridad bajo un manto de toneladas y toneladas de CSS de chichinabo que no transmite nada?" />
+					<Texto text="¿O enfocarte en un diseño que de enfoque a lo que de verdad importa? Es decir, a tus palabras" />
+
+					<Texto text="Cualquiera de las dos opciones son repetables, pero lamento decirte, que ." />
+
+					<Texto text="En lo primero la IA puede hacer lo " /-->
+					<!--p>¿Qué buscas? ¿esconderte de ti mismo o ganar más y mejor?</p>
+					<p>¿Ocultar tu mediocridad bajo mantos y toneladas de CSS que no transmiten nada? ¿O ser capaz de trasmitir mediante la palabra artística?</p>
+					<p>La IA te puede ayudar en lo primero.</p>
+					<h3>Yo en lo segundo.</h3>
+					<Title text='Desarrollador Web'/>
+					<Title text='hazte la pregunta'/>
+					<Title text='Quieres una web'/-->
+
+					<Texto text="¡Hola!, Soy Enrique Vergara"/>
+					<Title text='Desarrollador Web'/>
+
+					
 				</article>
-				<Button message='Latest Posts' icon='/external-link.svg' link='#'/>
+				
 			</section>
 			<section class="skills">
-				<Title text='Skills & Technologies'/>
+				<Title text='Habilidades y tecnologías'/>
 				<section>
-					<SkillCard 
-						title='Frontend Development'
-						description='Developing websites with JavaScript, React, and Astro'
+					<SkillCard
+						title='Desarrollo de frontend'
+						description='Desarrollo de sitios web con JavaScript, Angular y Astro'
 						icon='/design.svg'
 					/>
-					<SkillCard 
-						title='Backend Development'
-						description=' Developing APIs with JavaScript and Python'
+					<SkillCard
+						title='Desarrollo de backend'
+						description='Desarrollo de API con NodeJS y Django'
 						icon='/server.svg'
 					/>
-					<SkillCard 
-						title='Databases'
-						description='Databases like PostgreSQL and MongoDB.'
+					<SkillCard
+						title='Bases de datos'
+						description='Bases de datos como PostgreSQL y MongoDB.'
+						icon='/database.svg'
+					/>
+					<SkillCard
+						title='Despliegue de sistemas'
+						description='Sitemas LEMP y Docker en Linux.'
 						icon='/database.svg'
 					/>
 				</section>
 			</section>
-			<section class="work">
-				<Title text='My Work'/>
+			<!--section class="work">
+				<Title text='Mi trabajo'/>
 				<section>
+					
 					<ProjectCard 
-					title='My Project #1'
-					description='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-					link='#'
-					/>
-					<ProjectCard 
-						title='My Project #2'
+						title='Desarrollo Móvil #2'
 						description='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
 						link='#'
 					/>
@@ -59,10 +81,26 @@ import Title from "../components/Title.astro";
 					/>
 				</section>
 				
-			</section>
+			</section-->
 			<section class="contact">
-				<Title text='Tell me about your next project'/>
-				<Button message='Send Message' icon='/email.svg' link='mailto:example@example.com'/>
+				<Texto text="Y bien." />
+				<Texto text="¿Quieres una web?" />
+				<Texto text="Si es así ¿Qué buscas realmente?" />
+				<Texto text="¿Ocultar tu mediocridad bajo mantos y toneladas de CSS que no transmiten nada?" />
+				<Texto text="¿O enfocarte en un diseño que de enfoque a lo que de verdad importa?" />
+				<h3>
+					A tus palabras.
+				</h3>
+				<Texto text="La IA te ayudará increiblemente bien con lo primero." />
+				<Texto text="Lo hará infinitamente mejor que yo y cualquier programador." />
+				<Texto text="Una web que busca la aprobación ajena de todos pero que vender, vende poco." />
+				<Texto text='Yo en cambio, puedo ayudarte con lo segundo.'/>
+				<Texto text='Un diseño web que te permita...'/>
+				<h3>
+					Vender más y mejor.
+				</h3>
+				<Texto text='Si no estas interesado en vender mas y mejor, no me escribas al email de abajo. Que pases un buen día.'/>
+				<Button message='Enviar mensaje' icon='/email.svg' link='mailto:evergaradev@gmail.com'/>
 			</section>
 		</main>
 		<Footer />
