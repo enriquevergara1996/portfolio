@@ -1,6 +1,6 @@
 # Mi portfolio
 
-(https://enriquevergara.com)
+https://enriquevergara.com
 
 # Minimalist Dragon - Portfolio Template
 
