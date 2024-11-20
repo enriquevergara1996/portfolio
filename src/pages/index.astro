@@ -9,7 +9,7 @@ import Title from "../components/Title.astro";
 import Texto from "../components/Texto.astro";
 ---
 
-<Layout title="Mi Portfolio">
+<Layout title="Enrique Vergara Molina">
 	<header><Navbar /></header>
 		<main>
 			<section class="about">
@@ -18,28 +18,9 @@ import Texto from "../components/Texto.astro";
 					Your browser does not support the video tag.
 				</video>
 				<article>
-					<!--Texto text="Enserio." />
-					<Texto text="¿Quieres una web?" />
-					<Texto text="Si es así ¿Qué buscas realmente?" />
-					<Texto text="¿La aprobación ajena o vender más y mejor?" />
-					<Texto text="¿Ocultar tu mediocridad bajo un manto de toneladas y toneladas de CSS de chichinabo que no transmite nada?" />
-					<Texto text="¿O enfocarte en un diseño que de enfoque a lo que de verdad importa? Es decir, a tus palabras" />
-
-					<Texto text="Cualquiera de las dos opciones son repetables, pero lamento decirte, que ." />
-
-					<Texto text="En lo primero la IA puede hacer lo " /-->
-					<!--p>¿Qué buscas? ¿esconderte de ti mismo o ganar más y mejor?</p>
-					<p>¿Ocultar tu mediocridad bajo mantos y toneladas de CSS que no transmiten nada? ¿O ser capaz de trasmitir mediante la palabra artística?</p>
-					<p>La IA te puede ayudar en lo primero.</p>
-					<h3>Yo en lo segundo.</h3>
-					<Title text='Desarrollador Web'/>
-					<Title text='hazte la pregunta'/>
-					<Title text='Quieres una web'/-->
-
-					<Texto text="¡Hola!, Soy Enrique Vergara"/>
-					<Title text='Desarrollador Web'/>
-
-					
+					<Texto text="Tu NO quieres visitas"/>
+					<br>
+					<Title text='Tu quieres clientes'/>
 				</article>
 				
 			</section>
@@ -53,18 +34,18 @@ import Texto from "../components/Texto.astro";
 					/>
 					<SkillCard
 						title='Desarrollo de backend'
-						description='Desarrollo de API con NodeJS y Django'
+						description='Desarrollo de API con NodeJS, Django y Golang'
 						icon='server.svg'
 					/>
 					<SkillCard
 						title='Bases de datos'
-						description='Bases de datos como PostgreSQL y MongoDB.'
+						description='Bases de datos con PostgreSQL y MongoDB.'
 						icon='database.svg'
 					/>
 					<SkillCard
 						title='Despliegue de sistemas'
 						description='Sitemas LEMP y Docker en Linux.'
-						icon='database.svg'
+						icon='linux-blanco.png'
 					/>
 				</section>
 			</section>
@@ -126,10 +107,9 @@ import Texto from "../components/Texto.astro";
 		align-items: center;
 		gap: 40px;
 		width: 100%;
-		height: calc(100vh - 50px);
 		text-align: center;
 		border-bottom: 1px solid rgb(30, 30, 30, 0.3);
-		padding: 0 20px;
+		padding: 50px 0px;
 	}
 
 	.about > img {
@@ -197,9 +177,9 @@ import Texto from "../components/Texto.astro";
 			margin: 0 auto;
 		}
 
-		.about {
+		/*.about {
 			height: 80vh;
-		}
+		}*/
 
 		.about > img {
 			width: 100px;
